@@ -1,33 +1,21 @@
 // ========== GALLERY FUNCTIONALITY ==========
 document.addEventListener('DOMContentLoaded', function() {
-    // Stats_X Gallery
-    const statsxGallery = document.querySelector('#statsx .project-gallery');
-    if (statsxGallery) {
-        const mainImage = statsxGallery.querySelector('.gallery-main img');
-        const thumbs = statsxGallery.querySelectorAll('.thumb');
-        
-        const images = [
-            'images/infographic_01_withImages.png',
-            'images/infographic_03_attributes.png',
-            'images/infographic_04_modifiers.png',
-            'images/infographic_05_interceptors.png',
-            'images/infographic_06_network.png',
-            'images/infographic_02.png',
-            'images/infographic_09_performance.png'
-        ];
-        
-        thumbs.forEach((thumb, index) => {
+    // Generic handler for all project galleries
+    document.querySelectorAll('.project-gallery').forEach(gallery => {
+        const mainImage = gallery.querySelector('.gallery-main img');
+        const thumbs = gallery.querySelectorAll('.thumb');
+
+        if (!mainImage || !thumbs.length) return;
+
+        thumbs.forEach(thumb => {
             thumb.addEventListener('click', () => {
-                // Update main image
-                mainImage.src = images[index];
+                mainImage.src = thumb.src;
                 mainImage.alt = thumb.alt;
-                
-                // Update active state
                 thumbs.forEach(t => t.classList.remove('active'));
                 thumb.classList.add('active');
             });
         });
-    }
+    });
 
     // ========== SMOOTH SCROLL ==========
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -190,4 +178,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ========== CONSOLE EASTER EGG ==========
 console.log('%c🎮 Looking for a Game Developer?', 'font-size: 24px; font-weight: bold; color: #D4A84B;');
-console.log('%cContact: gabrielerogani.employment@gmail.com', 'font-size: 14px; color: #fff;');
+console.log('%cContact: gabriele.rogani@gmail.com', 'font-size: 14px; color: #fff;');
