@@ -46,7 +46,7 @@
             <p class="hero-subtitle">Gameplay Programmer <span class="separator">|</span> Technical Designer <span class="separator">|</span> Game Developer</p>
             <p class="hero-description">
                 Creo sistemi gameplay complessi, tools professionali e esperienze immersive.
-                <br>Sviluppatore di <span class="highlight">Stats_X</span> per FAB Marketplace e <span class="highlight">DriftSpace</span> in arrivo su Steam.
+                <br>Sviluppatore di <span class="highlight">Stats_X</span> e <span class="highlight">inventory_X</span> per FAB Marketplace, <span class="highlight">DriftSpace</span> e <span class="highlight">HavenBound</span> in arrivo su Steam.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -58,7 +58,7 @@
                     <span class="stat-label">Years UE5</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">15K</span>
+                    <span class="stat-number">75K</span>
                     <span class="stat-label">Lines C++</span>
                 </div>
                 <div class="stat">
@@ -83,9 +83,9 @@
             <div class="about-grid">
                 <div class="about-text">
                     <p class="lead">Game Developer specializzato in <span class="highlight">Unreal Engine 5</span>, con focus su gameplay systems, tools development e architetture multiplayer.</p>
-                    <p>Il mio percorso è iniziato con <strong>Python</strong> nel 2022, dove ho creato <span class="highlight">Lilith</span> — un sistema AI multi-agent che anticipava di anni i pattern che sarebbero diventati mainstream con AutoGPT e LangChain.</p>
-                    <p>Nel 2023 ho scoperto Unreal Engine e non ho più smesso. Ho masterato i <strong>Blueprint</strong> e poi sono passato al <strong>C++</strong>, costruendo sistemi complessi come <span class="highlight">Stats_X</span> — un plugin professionale per la gestione di attributi e status effects.</p>
-                    <p>Oggi sviluppo <span class="highlight">DriftSpace</span>, un horror cooperativo in uscita su Steam, e continuo a espandere le mie competenze in game design e systems architecture.</p>
+                    <p>Il mio percorso è iniziato con <strong>Python</strong>, dove ho creato <span class="highlight">Lilith</span>: un sistema AI multi-agent che anticipava di anni i pattern che sarebbero diventati mainstream con AutoGPT e LangChain.</p>
+                    <p>Successivamente ho ripreso a usare Unreal Engine masterando i <strong>Blueprint</strong> e poi sono passato al <strong>C++</strong>, costruendo sistemi complessi come <span class="highlight">Stats_X</span>, un plugin professionale Ability System con l'ambizione di sostituire GAS.</p>
+                    <p>Oggi mantengo i miei plugins, ne preparo di nuovi e sviluppo <span class="highlight">DriftSpace</span>, un horror cooperativo in uscita su Steam e continuo a espandere le mie competenze in game design e systems architecture.</p>
                     <div class="about-highlight">
                         <div class="highlight-icon">💡</div>
                         <div class="highlight-text">
@@ -136,7 +136,7 @@
                     <div class="project-number">01</div>
                     <div class="project-info">
                         <h3 class="project-title">Stats_X</h3>
-                        <p class="project-tagline">Advanced Stats & Status System for Unreal Engine 5</p>
+                        <p class="project-tagline">Advanced Virtual Machine Ability System for Unreal Engine 5</p>
                         <div class="project-tags">
                             <span class="tag">C++</span>
                             <span class="tag">UE5 Plugin</span>
@@ -147,10 +147,10 @@
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p>Sistema professionale per la gestione di attributi e status effects, progettato come alternativa leggera e performante a GAS. <strong>~15.000 linee di codice C++</strong> sviluppate in <strong>2 mesi</strong>.</p>
+                        <p>Sistema professionale per la gestione di attributi e status effects, progettato come alternativa leggera e performante a GAS. <strong>~75.000 linee di codice C++</strong>. Utilizza tecniche di <strong>bit-packing</strong> e <strong>BLOB architecture</strong> per massimizzare le prestazioni della CPU cache L1.</p>
                         <ul class="feature-list">
                             <li><strong>Attribute System</strong> — Health, Mana, Stats con auto-recalculation e delta compression</li>
-                            <li><strong>Modifier System</strong> — Buff/debuff stackabili con formula matematica precisa</li>
+                            <li><strong>Modifier System</strong> — Buff/debuff stackabili con formula matematica e dipendenze customizabili</li>
                             <li><strong>Interceptor System</strong> — Shields, lifesteal, damage reduction con ricerca O(1)</li>
                             <li><strong>Status Forge</strong> — Editor node-based che compila in C++ native hot-path</li>
                             <li><strong>Network Ready</strong> — Fast Array Replication, server-authoritative, zero config</li>
@@ -158,7 +158,7 @@
                         </ul>
                         <div class="project-stats">
                             <div class="p-stat">
-                                <span class="p-stat-value">15K</span>
+                                <span class="p-stat-value">75K</span>
                                 <span class="p-stat-label">Lines of Code</span>
                             </div>
                             <div class="p-stat">
@@ -213,9 +213,9 @@
                         <ul class="feature-list">
                             <li><strong>Multiplayer</strong> — 1-4 giocatori confermati, obiettivo 1-8</li>
                             <li><strong>Grafica Realistica</strong> — Rendering AAA, MetaHuman characters</li>
-                            <li><strong>Dungeon Procedurali</strong> — Generazione dinamica con Dungeon Architect</li>
+                            <li><strong>Dungeon Procedurali</strong> — Generazione dinamica basata su seed deterministico</li>
                             <li><strong>UI Diegetica</strong> — HUD nell'elmo tramite depth pass</li>
-                            <li><strong>Sci-Fi Elements</strong> — Ologrammi interattivi, stats in-helmet</li>
+                            <li><strong>Sci-Fi Elements</strong> — Ologrammi interattivi</li>
                         </ul>
                     </div>
                     <div class="project-gallery">
@@ -245,7 +245,7 @@
                     <div class="project-description">
                         <p>RPG souls-like con elementi survival e <strong>narrativa ramificata</strong> ispirata a Baldur's Gate 3. Mappa open world di <strong>100km²</strong> con biomi multipli. Progetto personale in sviluppo dal 2023.</p>
                         <ul class="feature-list">
-                            <li><strong>World</strong> — 100km² generati con Gaea, espandibile con regioni aggiuntive</li>
+                            <li><strong>World</strong> — 100km² generati prima con Gaea e poi su Unreal Engine</li>
                             <li><strong>Combat</strong> — Sistema For Honor-style con stance e direzioni</li>
                             <li><strong>Biomi</strong> — Foreste, deserti, vulcani, ghiacciai, coste</li>
                             <li><strong>Features</strong> — Crafting, quests, building, lore ramificabile</li>
@@ -284,6 +284,7 @@
                             <li><strong>Specialized Agents</strong> — Code Agent (files, venv, Docker), Research, Writing</li>
                             <li><strong>Orchestration</strong> — Raccolta risultati, assemblaggio, error handling</li>
                             <li><strong>Vision</strong> — Anticipazione di 1-2 anni dei pattern diventati standard</li>
+                            <li><strong>Voice</strong> — Integrazione con API Microsoft Azure per la voce</li>
                         </ul>
                         <div class="lilith-highlight">
                             <div class="highlight-badge">🔮 AHEAD OF TIME</div>
@@ -352,16 +353,16 @@
                             <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
                             <span class="skill-name">C</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">SQL</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 55%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -369,14 +370,14 @@
                     <div class="skill-icon">🛠️</div>
                     <h3>Tools & Software</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">Unreal Engine</span>
                         <span class="skill-tag">Git / GitHub</span>
                         <span class="skill-tag">Visual Studio</span>
                         <span class="skill-tag">Gaea</span>
-                        <span class="skill-tag">Dungeon Architect</span>
+                        <span class="skill-tag">AI API &amp; Infrastructures</span>
                         <span class="skill-tag">Autodesk Suite</span>
                         <span class="skill-tag">Adobe Suite</span>
                         <span class="skill-tag">HubSpot CRM</span>
-                        <span class="skill-tag">WordPress</span>
                     </div>
                 </div>
             </div>
