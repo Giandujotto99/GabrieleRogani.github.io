@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-cta">
-            <a href="index_en.html" class="btn-lang">EN</a>
+            <a href="index.html" class="btn-lang">IT</a>
             <a href="#contact" class="btn btn-primary">Hire Me</a>
         </div>
         <div class="hamburger">
@@ -46,8 +46,8 @@
             </h1>
             <p class="hero-subtitle">Gameplay Programmer <span class="separator">|</span> Technical Designer <span class="separator">|</span> Game Developer</p>
             <p class="hero-description">
-                Creo sistemi gameplay complessi, tools professionali e esperienze immersive.
-                <br>Sviluppatore di <span class="highlight">Stats_X</span> e <span class="highlight">inventory_X</span> per FAB Marketplace, <span class="highlight">DriftSpace</span> e <span class="highlight">HavenBound</span> in arrivo su Steam.
+                I create complex gameplay systems, professional tools, and immersive experiences.
+                <br>Developer of <span class="highlight">Stats_X</span> and <span class="highlight">inventory_X</span> for FAB Marketplace, <span class="highlight">DriftSpace</span> and <span class="highlight">HavenBound</span> coming to Steam.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -83,14 +83,14 @@
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p class="lead">Game Developer specializzato in <span class="highlight">Unreal Engine 5</span>, con focus su gameplay systems, tools development e architetture multiplayer.</p>
-                    <p>Il mio percorso è iniziato con <strong>Python</strong>, dove ho creato <span class="highlight">Lilith</span>: un sistema AI multi-agent che anticipava di anni i pattern che sarebbero diventati mainstream con AutoGPT e LangChain.</p>
-                    <p>Successivamente ho ripreso a usare Unreal Engine masterando i <strong>Blueprint</strong> e poi sono passato al <strong>C++</strong>, costruendo sistemi complessi come <span class="highlight">Stats_X</span>, un plugin professionale Ability System con l'ambizione di sostituire GAS.</p>
-                    <p>Oggi mantengo i miei plugins, ne preparo di nuovi e sviluppo <span class="highlight">DriftSpace</span>, un horror cooperativo in uscita su Steam e continuo a espandere le mie competenze in game design e systems architecture.</p>
+                    <p class="lead">Game Developer specialized in <span class="highlight">Unreal Engine 5</span>, focused on gameplay systems, tools development, and multiplayer architectures.</p>
+                    <p>My journey started with <strong>Python</strong>, where I created <span class="highlight">Lilith</span>: a multi-agent AI system that anticipated by years the patterns that would become mainstream with AutoGPT and LangChain.</p>
+                    <p>I then picked up Unreal Engine, mastering <strong>Blueprints</strong> before moving to <strong>C++</strong>, building complex systems like <span class="highlight">Stats_X</span> — a professional Ability System plugin with the ambition to replace GAS.</p>
+                    <p>Today I maintain my plugins, develop new ones, and work on <span class="highlight">DriftSpace</span> — a cooperative horror game coming to Steam — while continuing to expand my expertise in game design and systems architecture.</p>
                     <div class="about-highlight">
                         <div class="highlight-icon">💡</div>
                         <div class="highlight-text">
-                            <strong>What drives me:</strong> Problem solving e pensiero sistemico. Amo progettare architetture eleganti che risolvono problemi complessi in modo semplice.
+                            <strong>What drives me:</strong> Problem solving and systems thinking. I love designing elegant architectures that solve complex problems simply.
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     <div class="about-quick-facts">
                         <div class="fact">
                             <span class="fact-icon">📍</span>
-                            <span>Torino, Italia</span>
+                            <span>Turin, Italy</span>
                         </div>
                         <div class="fact">
                             <span class="fact-icon">🌐</span>
@@ -146,14 +146,14 @@
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p>Sistema professionale per la gestione di attributi e status effects, progettato come alternativa leggera e performante a GAS. <strong>~75.000 linee di codice C++</strong>. Utilizza tecniche di <strong>bit-packing</strong> e <strong>BLOB architecture</strong> per massimizzare le prestazioni della CPU cache L1.</p>
+                        <p>Professional system for managing attributes and status effects, designed as a lightweight and performant alternative to GAS. <strong>~75,000 lines of C++</strong>. Uses <strong>bit-packing</strong> and <strong>BLOB architecture</strong> techniques to maximize CPU cache L1 performance.</p>
                         <ul class="feature-list">
-                            <li><strong>Attribute System</strong> — Health, Mana, Stats con auto-recalculation e delta compression</li>
-                            <li><strong>Modifier System</strong> — Buff/debuff stackabili con formula matematica e dipendenze customizabili</li>
-                            <li><strong>Interceptor System</strong> — Shields, lifesteal, damage reduction con ricerca O(1)</li>
-                            <li><strong>Status Forge</strong> — Editor node-based che compila in C++ native hot-path</li>
+                            <li><strong>Attribute System</strong> — Health, Mana, Stats with auto-recalculation and delta compression</li>
+                            <li><strong>Modifier System</strong> — Stackable buff/debuff with mathematical formula and customizable dependencies</li>
+                            <li><strong>Interceptor System</strong> — Shields, lifesteal, damage reduction with O(1) lookup</li>
+                            <li><strong>Status Forge</strong> — Node-based editor that compiles to native C++ hot-path</li>
                             <li><strong>Network Ready</strong> — Fast Array Replication, server-authoritative, zero config</li>
-                            <li><strong>Performance</strong> — 120 FPS con 500+ actors, 5000+ status concurrent</li>
+                            <li><strong>Performance</strong> — 120 FPS with 500+ actors, 5000+ concurrent status effects</li>
                         </ul>
                         <div class="project-stats">
                             <div class="p-stat">
@@ -208,15 +208,15 @@
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p>Plugin professionale per la gestione inventari, completamente <strong>UI Agnostic</strong> e indipendente dal genere di gioco. Non impone alcun concept o struttura visiva: offre tutti gli strumenti per realizzare qualsiasi tipo di inventario. Architettura <strong>lag-compensated</strong>, <strong>zero allocazioni heap</strong> nelle operazioni ad alta frequenza e un sistema di sicurezza avanzato che copre exploit, manipolazione dei dati di rete e molto altro.</p>
+                        <p>Professional inventory management plugin, completely <strong>UI Agnostic</strong> and genre-independent. It imposes no concept or visual structure: it provides all the tools to build any type of inventory. <strong>Lag-compensated</strong> architecture, <strong>zero heap allocations</strong> on high-frequency operations, and an advanced security system covering exploits, network data manipulation, and much more.</p>
                         <ul class="feature-list">
-                            <li><strong>Client-Side Prediction</strong> — Il client predice le mutazioni (consumo munizioni, spostamento item) e il server riconcilia con rollback automatico</li>
-                            <li><strong>Rollback Journaling</strong> — Shadow State con sistema undo/redo interno: desincronizzazione visiva gestita senza UI flickering</li>
-                            <li><strong>FastArray Replication</strong> — Delta serialization MMO-scale: solo i dati modificati viaggiano in rete</li>
-                            <li><strong>Anti-Cheat Security</strong> — Custom NetSerialize con Payload Bounding: previene Allocation Bomb scartando payload malevoli prima dell'heap allocation</li>
-                            <li><strong>Zero-Allocation Hot Paths</strong> — MicroSnapshots stack-allocated (&lt;64 byte) e TInlineAllocator: 0 malloc nelle operazioni a 60Hz+</li>
-                            <li><strong>Data-Driven Design</strong> — Policy Pattern su UDataAsset: regole di validazione e mutazione modificabili senza toccare l'hot-path C++</li>
-                            <li><strong>Custom K2 Nodes</strong> — Blueprint nodes con wildcard pins, type-checking a compile-time e Custom Thunks che bypassano la Blueprint VM</li>
+                            <li><strong>Client-Side Prediction</strong> — Client predicts mutations (ammo consumption, item movement) and the server reconciles with automatic rollback</li>
+                            <li><strong>Rollback Journaling</strong> — Shadow State with internal undo/redo system: visual desync handled without UI flickering</li>
+                            <li><strong>FastArray Replication</strong> — MMO-scale delta serialization: only modified data travels over the network</li>
+                            <li><strong>Anti-Cheat Security</strong> — Custom NetSerialize with Payload Bounding: prevents Allocation Bombs by discarding malicious payloads before heap allocation</li>
+                            <li><strong>Zero-Allocation Hot Paths</strong> — Stack-allocated MicroSnapshots (&lt;64 bytes) and TInlineAllocator: 0 malloc at 60Hz+</li>
+                            <li><strong>Data-Driven Design</strong> — Policy Pattern on UDataAsset: validation and mutation rules modifiable without touching the C++ hot-path</li>
+                            <li><strong>Custom K2 Nodes</strong> — Blueprint nodes with wildcard pins, compile-time type-checking and Custom Thunks that bypass the Blueprint VM</li>
                         </ul>
                         <div class="project-stats">
                             <div class="p-stat">
@@ -243,13 +243,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <img src="images/Inventory_X Infografica 1 2k.png" alt="Overview" class="thumb active" data-index="0">
-                            <img src="images/Inventory_X Infografica 2 2k.png" alt="Infografica 2" class="thumb" data-index="1">
-                            <img src="images/Inventory_X Infografica 3 2k.png" alt="Infografica 3" class="thumb" data-index="2">
-                            <img src="images/Inventory_X Infografica 4 2k.png" alt="Infografica 4" class="thumb" data-index="3">
-                            <img src="images/Inventory_X Infografica 5 2k.png" alt="Infografica 5" class="thumb" data-index="4">
-                            <img src="images/Inventory_X Infografica 6 2k.png" alt="Infografica 6" class="thumb" data-index="5">
-                            <img src="images/Inventory_X Infografica 7 2k.png" alt="Infografica 7" class="thumb" data-index="6">
-                            <img src="images/Inventory_X Infografica 8 2k.png" alt="Infografica 8" class="thumb" data-index="7">
+                            <img src="images/Inventory_X Infografica 2 2k.png" alt="Infographic 2" class="thumb" data-index="1">
+                            <img src="images/Inventory_X Infografica 3 2k.png" alt="Infographic 3" class="thumb" data-index="2">
+                            <img src="images/Inventory_X Infografica 4 2k.png" alt="Infographic 4" class="thumb" data-index="3">
+                            <img src="images/Inventory_X Infografica 5 2k.png" alt="Infographic 5" class="thumb" data-index="4">
+                            <img src="images/Inventory_X Infografica 6 2k.png" alt="Infographic 6" class="thumb" data-index="5">
+                            <img src="images/Inventory_X Infografica 7 2k.png" alt="Infographic 7" class="thumb" data-index="6">
+                            <img src="images/Inventory_X Infografica 8 2k.png" alt="Infographic 8" class="thumb" data-index="7">
                         </div>
                     </div>
                 </div>
@@ -272,13 +272,13 @@
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p>Horror cooperativo in prima persona ambientato nello spazio. Ispirato a Lethal Company ma con <strong>grafica realistica</strong> e meccaniche Sci-Fi avanzate. <strong>Prossimo alla pubblicazione su Steam.</strong></p>
+                        <p>First-person cooperative horror set in space. Inspired by Lethal Company but with <strong>realistic graphics</strong> and advanced Sci-Fi mechanics. <strong>Coming soon to Steam.</strong></p>
                         <ul class="feature-list">
-                            <li><strong>Multiplayer</strong> — 1-4 giocatori confermati, obiettivo 1-8</li>
-                            <li><strong>Grafica Realistica</strong> — Rendering AAA, MetaHuman characters</li>
-                            <li><strong>Dungeon Procedurali</strong> — Generazione dinamica basata su seed deterministico</li>
-                            <li><strong>UI Diegetica</strong> — HUD nell'elmo tramite depth pass</li>
-                            <li><strong>Sci-Fi Elements</strong> — Ologrammi interattivi</li>
+                            <li><strong>Multiplayer</strong> — 1-4 players confirmed, target 1-8</li>
+                            <li><strong>Realistic Graphics</strong> — AAA rendering, MetaHuman characters</li>
+                            <li><strong>Procedural Dungeons</strong> — Dynamic generation based on deterministic seed</li>
+                            <li><strong>Diegetic UI</strong> — Helmet HUD via depth pass</li>
+                            <li><strong>Sci-Fi Elements</strong> — Interactive holograms</li>
                         </ul>
                     </div>
                     <div class="project-gallery">
@@ -308,12 +308,12 @@
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p>RPG souls-like con elementi survival e <strong>narrativa ramificata</strong> ispirata a Baldur's Gate 3. Mappa open world di <strong>100km²</strong> con biomi multipli. Progetto personale in sviluppo dal 2023.</p>
+                        <p>Souls-like RPG with survival elements and <strong>branching narrative</strong> inspired by Baldur's Gate 3. Open world map of <strong>100km²</strong> with multiple biomes. Personal project in development since 2023.</p>
                         <ul class="feature-list">
-                            <li><strong>World</strong> — 100km² generati prima con Gaea e poi su Unreal Engine</li>
-                            <li><strong>Combat</strong> — Sistema For Honor-style con stance e direzioni</li>
-                            <li><strong>Biomi</strong> — Foreste, deserti, vulcani, ghiacciai, coste</li>
-                            <li><strong>Features</strong> — Crafting, quests, building, lore ramificabile</li>
+                            <li><strong>World</strong> — 100km² generated first with Gaea, then built in Unreal Engine</li>
+                            <li><strong>Combat</strong> — For Honor-style system with stances and directions</li>
+                            <li><strong>Biomes</strong> — Forests, deserts, volcanoes, glaciers, coastlines</li>
+                            <li><strong>Features</strong> — Crafting, quests, building, branching lore</li>
                         </ul>
                     </div>
                     <div class="project-gallery erion-gallery">
@@ -343,17 +343,17 @@
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p>Sistema AI generalista con architettura <strong>multi-agent</strong>, sviluppato <strong>prima della diffusione del concetto di "AI Agents"</strong> nel mainstream. Un anno prima di AutoGPT, LangChain agents e CrewAI.</p>
+                        <p>Generalist AI system with <strong>multi-agent</strong> architecture, developed <strong>before the concept of "AI Agents" went mainstream</strong>. A year before AutoGPT, LangChain agents and CrewAI.</p>
                         <ul class="feature-list">
-                            <li><strong>Task Decomposition</strong> — Divide automaticamente i task in 5+ subtask</li>
+                            <li><strong>Task Decomposition</strong> — Automatically divides tasks into 5+ subtasks</li>
                             <li><strong>Specialized Agents</strong> — Code Agent (files, venv, Docker), Research, Writing</li>
-                            <li><strong>Orchestration</strong> — Raccolta risultati, assemblaggio, error handling</li>
-                            <li><strong>Vision</strong> — Anticipazione di 1-2 anni dei pattern diventati standard</li>
-                            <li><strong>Voice</strong> — Integrazione con API Microsoft Azure per la voce</li>
+                            <li><strong>Orchestration</strong> — Result collection, assembly, error handling</li>
+                            <li><strong>Vision</strong> — 1-2 years ahead of patterns that became industry standard</li>
+                            <li><strong>Voice</strong> — Integration with Microsoft Azure API for voice</li>
                         </ul>
                         <div class="lilith-highlight">
                             <div class="highlight-badge">🔮 AHEAD OF TIME</div>
-                            <p>Ho costruito un sistema di AI agents prima che il termine esistesse. Questo dimostra capacità di <strong>pensiero sistemico</strong> e <strong>visione architetturale</strong>.</p>
+                            <p>I built an AI agent system before the term existed. This demonstrates <strong>systems thinking</strong> and <strong>architectural vision</strong>.</p>
                         </div>
                     </div>
                 </div>
