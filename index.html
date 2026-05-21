@@ -192,10 +192,59 @@
                 </div>
             </div>
 
+            <!-- Inventory_X -->
+            <div class="project-showcase" id="inventoryx">
+                <div class="project-header">
+                    <div class="project-number">02</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Inventory_X</h3>
+                        <p class="project-tagline">Advanced Predictive Inventory System for Unreal Engine 5</p>
+                        <div class="project-tags">
+                            <span class="tag">C++17/20</span>
+                            <span class="tag">UE5 Plugin</span>
+                            <span class="tag">FAB Marketplace</span>
+                            <span class="tag">MMO Scale</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-description">
+                        <p>Plugin professionale per la gestione inventari con architettura <strong>lag-compensated</strong> in stile sparatutto competitivo. Progettato per scala MMO con <strong>zero allocazioni heap</strong> nelle operazioni ad alta frequenza e sistema di sicurezza <strong>anti-cheat</strong> integrato.</p>
+                        <ul class="feature-list">
+                            <li><strong>Client-Side Prediction</strong> — Il client predice le mutazioni (consumo munizioni, spostamento item) e il server riconcilia con rollback automatico</li>
+                            <li><strong>Rollback Journaling</strong> — Shadow State con sistema undo/redo interno: desincronizzazione visiva gestita senza UI flickering</li>
+                            <li><strong>FastArray Replication</strong> — Delta serialization MMO-scale: solo i dati modificati viaggiano in rete</li>
+                            <li><strong>Anti-Cheat Security</strong> — Custom NetSerialize con Payload Bounding: previene Allocation Bomb scartando payload malevoli prima dell'heap allocation</li>
+                            <li><strong>Zero-Allocation Hot Paths</strong> — MicroSnapshots stack-allocated (&lt;64 byte) e TInlineAllocator: 0 malloc nelle operazioni a 60Hz+</li>
+                            <li><strong>Data-Driven Design</strong> — Policy Pattern su UDataAsset: regole di validazione e mutazione modificabili senza toccare l'hot-path C++</li>
+                            <li><strong>Custom K2 Nodes</strong> — Blueprint nodes con wildcard pins, type-checking a compile-time e Custom Thunks che bypassano la Blueprint VM</li>
+                        </ul>
+                        <div class="project-stats">
+                            <div class="p-stat">
+                                <span class="p-stat-value">C++20</span>
+                                <span class="p-stat-label">Modern C++</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-value">0</span>
+                                <span class="p-stat-label">malloc @ 60Hz+</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-value">MMO</span>
+                                <span class="p-stat-label">Scale Ready</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-value">TDD</span>
+                                <span class="p-stat-label">Test-Driven Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- DriftSpace -->
             <div class="project-showcase" id="driftspace">
                 <div class="project-header">
-                    <div class="project-number">02</div>
+                    <div class="project-number">03</div>
                     <div class="project-info">
                         <h3 class="project-title">DriftSpace</h3>
                         <p class="project-tagline">Sci-Fi Cooperative Horror</p>
@@ -229,7 +278,7 @@
             <!-- Erion -->
             <div class="project-showcase" id="erion">
                 <div class="project-header">
-                    <div class="project-number">03</div>
+                    <div class="project-number">04</div>
                     <div class="project-info">
                         <h3 class="project-title">Erion</h3>
                         <p class="project-tagline">Open World Action RPG</p>
@@ -264,7 +313,7 @@
             <!-- Lilith -->
             <div class="project-showcase" id="lilith">
                 <div class="project-header">
-                    <div class="project-number">04</div>
+                    <div class="project-number">05</div>
                     <div class="project-info">
                         <h3 class="project-title">Lilith</h3>
                         <p class="project-tagline">Multi-Agent AI System</p>
